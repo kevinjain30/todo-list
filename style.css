@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Montserrat", sans-serif;
+}
+
 .tasks {
-    border: 1px solid black;
+    border: 2px solid rgba(138, 138, 138, 0.649);
     display: flex;
     align-items: center;
     width: 300px;
@@ -8,14 +14,58 @@
     border-radius: 8px;
     justify-content: space-between;
     margin-top: 10px;
+    box-shadow: 0px 3px 8px #aeaeae;
 }
 
 .para {
     flex-grow: 1; 
     text-transform: capitalize;
+    margin-left: 10px;
+    font-size: 18px;
 }
 
 .btns {
     display: flex;
     gap: 5px;
+}
+
+#btn{
+    font-weight: 600;
+}
+
+.delete, .edit{
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.412);
+    font-weight: 600;
+}
+
+#btn, .delete, .edit:hover{
+    cursor: pointer;
+}
+
+#input, #btn{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.412);
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#input-btn{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#todo-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
